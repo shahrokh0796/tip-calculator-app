@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --very-dark-cyan: hsl(183, 100%, 15%);
+--dark-grayish-cyan: hsl(186, 14%, 43%);
+--grayish-cyan: hsl(184, 14%, 56%);
+--light-grayish-cyan: hsl(185, 41%, 84%);
+--very-light-grayish-cyan: hsl(189, 41%, 97%);
+--strong-cyan: hsl(172, 67%, 45%);
+--white: hsl(0, 0%, 100%);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    background-color: var(--light-grayish-cyan);
+    min-block-size: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: var(--very-dark-cyan);
+        text-transform: uppercase;
+        margin-block-end: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.4rem;
+    }
+  }
+  
+  img {
+    display: block;
+    max-inline-size: 100%;
+  }
+  input {
+    font-size: 1.5rem;
+    inline-size: 100%;
+    color: var(--very-dark-cyan);
+  }
+  
+
+  .main {
+    box-shadow: 0px 3px 18px -6px var(--very-dark-cyan);
+    background-color: var(--very-light-grayish-cyan);
+    padding-inline: 1.3rem;
+    padding-block: 1.5rem;
+    margin-inline: 2rem;
+    display: flex;
+    border-radius: 0.5rem;
+    max-inline-size:37.5rem;
+  }
+
+/* This is the styles of left section <---*/
+  .tipSection {
+    max-inline-size: 50%;
+    color: var(--dark-grayish-cyan);
+    font-size: 0.9rem;
+    padding-inline-start: 0.5rem;
+  }
+
+  .tipSectionTotal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1.5rem;
+    input {
+        direction: rtl;
+        border: none;
+        padding: 0.2rem;
+        border-radius: 0.4rem;
+        background-color: rgba(212, 212, 212, 0.411);
+        border: 2px solid transparent;
+        cursor:pointer;
+    }
+    input:hover {
+      border: 2px solid var(--strong-cyan);
+    }
+
+    img {
+      inline-size: 0.9rem;
+      position: absolute;
+      top: 1.8rem;left: 0.5rem;
+    }
+  }
+
+  .tipSectionTips {
+    display: grid;
+    gap: 0.5rem;
+    margin-block-start: 0.3rem;
+    grid-template-columns: repeat(3, 1fr);
+    input {
+        font-size: 1rem;
+        background-color: var(--light-grayish-cyan); 
+        text-align: center;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        border: none;
+        transition: 0.10s ease-in-out;
+    }
+
+    input:hover {
+      background-color: var(--very-light-grayish-cyan);
+      border: 2px solid var(--strong-cyan);
+    }
+
+    /*span {
+        color: var(--white);
+        background-color: var(--very-dark-cyan);
+        text-align: center;
+        border-radius: 0.3rem;
+        padding-block: 0.3rem;
+        cursor:pointer;
+        transition: 0.15s ease-in-out;
+    }*/
+
+    span:hover {
+      background-color: var(--light-grayish-cyan);
+      color: var(--very-dark-cyan);
+    }
+  }
+
+   /* Javascript stylings */
+   .darkcyan {background-color: var(--very-dark-cyan);}
+   /* Javascript stylings ends*/
+  .percentage-option {
+    color: var(--white);
+    background-color: var(--very-dark-cyan);
+    text-align: center;
+    border-radius: 0.3rem;
+    padding-block: 0.3rem;
+    cursor:pointer;
+    transition: 0.15s ease-in-out;
+  }
+
+  .tipSectionRecipient {
+    margin-block-start: 1rem;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 0.7rem;
+    }
+    .error {
+      color: red;
+    }
+  }
+
+  .tipSectionRecipientField {
+    input {
+        inline-size: 100%;
+        background-color: rgba(212, 212, 212, 0.411);
+        direction: rtl;
+        border: none;
+        padding-inline: 0.5rem;
+        padding-block: 0.2rem;
+        padding-inline-end: 1rem;
+    }
+    position: relative;
+    img {
+      position: absolute;
+      top: 0.55rem; left: 0.5rem;
+    }
+  }
+
+  .selected {background-color: var(--strong-cyan);}
+  #persons {
+    border-radius: 0.3rem;
+  }
+/* Styles of left side ends*/
+
+
+
+  /* This is the styles of right section --->*/
+
+  button {
+    cursor: pointer;
+    padding: 0.65rem;
+    max-inline-size: 85%;
+    inline-size: 100%;
+    border-radius: 0.3rem;  
+    background-color: hsl(183, 79%, 21%);
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    transition: 0.15s ease-in-out;
+  }
+  .strongCyan {background-color: var(--strong-cyan);}
+  
+  .billSection {
+    max-inline-size: 50%;
+    inline-size: 100%;
+    border-radius: 0.5rem;
+    margin-inline-start: 1rem;
+    text-align: center;
+    background-color: var(--very-dark-cyan);
+
+    button:hover {
+      background-color: var(--light-grayish-cyan);
+    }
+  }
+
+  .billSectionTipAmount, .billSectionTotal {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.3rem;
+    padding-block-start: 1rem;
+  }
+  .billSectionTotal {margin-block-end: 4rem;}
+
+  .billSectionTipAmount p:nth-child(odd), .billSectionTotal p:nth-child(odd) {
+    line-height: 1rem;
+    font-size: 0.8rem;
+    color: var(--white);
+    align-self: end;
+  }
+
+  
+  .billSectionTotal p:nth-child(even), .billSectionTipAmount p:nth-child(even) {
+    color: var(--strong-cyan);
+    font-size: 2rem;
+  }  
+  /* Styles of right side ends*/
+
+  @media screen and (max-width: 600px) {
+    .main {
+      flex-direction: column;
+      max-inline-size: 22rem;
+    }
+
+    .billSection {
+      max-inline-size: 100%;
+      margin-inline-start: 0;
+      margin-block-start: 1.5rem;
+    } 
+    .tipSection {
+      max-inline-size: 100%;
+    }
+
+    .billSectionTotal {
+      margin-block-end: 2rem;
+    }
+
+    button {
+      margin-block-end: 1.2rem;}
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .tipSectionTips {
+      display: grid;
+    gap: 0.5rem;
+    margin-block-start: 0.3rem;
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
